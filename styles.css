@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8e1f4 60%, #ffe5ec 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.container {
+  background: rgba(255, 245, 250, 0.95);
+  border-radius: 28px;
+  padding: 48px 32px 40px 32px;
+  box-shadow: 0 8px 32px rgba(255, 182, 193, 0.25);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  border: 2px solid #ffd6e0;
+}
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffb6d5;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px #ffb6d580;
+  background: #fff0f6;
+}
+
+.logo {
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #ff69b4;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px #fff0f6;
+}
+
+.subtitle {
+  color: #c77dff;
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #ffe5ec;
+  color: #d63384;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 14px 0;
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #ffd6e0;
+  border: 2px solid #ffd6e0;
+}
+
+.link:hover {
+  background: #ffd6e0;
+  color: #a4136c;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px #ffd6e0;
+}
+
+.highlight-kick {
+  background: #53fc18;
+  color: #181818;
+  font-size: 1.2rem;
+  border: 2px solid #53fc18;
+  box-shadow: 0 0 16px #53fc18aa;
+}
+
+.highlight-kick:hover {
+  background: #181818;
+  color: #53fc18;
+}
+
+.highlight-discord {
+  background: #5865f2;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #5865f2;
+  box-shadow: 0 0 16px #5865f2aa;
+}
+
+.highlight-discord:hover {
+  background: #23234b;
+  color: #5865f2;
+} 
