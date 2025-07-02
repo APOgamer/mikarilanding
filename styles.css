@@ -7,6 +7,55 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background-left, .background-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 50vw;
+  height: 100vh;
+}
+
+.background-left {
+  left: 0;
+}
+
+.background-right {
+  right: 0;
+}
+
+.background-left img, .background-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+
+/* Overlay para suavizar las imágenes de fondo */
+.background-left::after, .background-right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 225, 244, 0.3);
+  pointer-events: none;
+}
+
+@media (max-width: 800px) {
+  .background-left, .background-right {
+    width: 50vw;
+    display: block;
+  }
 }
 
 .container {
@@ -18,6 +67,9 @@ body {
   max-width: 350px;
   width: 100%;
   border: 2px solid #ffd6e0;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
 }
 
 .avatar {
@@ -101,4 +153,4 @@ body {
 .highlight-discord:hover {
   background: #23234b;
   color: #5865f2;
-} 
+}
